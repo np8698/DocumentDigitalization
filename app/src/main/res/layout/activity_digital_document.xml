@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DigitalDocumentActivity"
+    android:orientation="vertical"
+    android:background="#cdc0b0">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:textSize="12sp"
+        android:onClick="logOut"
+        android:textColor="#ffffff"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/default_margin"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDigitalDocument"
+        android:scrollbars="vertical"
+        android:layout_width = "match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="54dp"
+        android:padding="@dimen/default_padding"/>
+
+</android.support.constraint.ConstraintLayout>
